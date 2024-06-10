@@ -62,21 +62,54 @@
             float: none;
           }
         }
-        
-        .gallery {
-          margin: 5px;
-          border: 1px solid #ccc;
-          float: left;
-          width: 280px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centraliza as galerias horizontalmente */
         }
 
-        .gallery:hover {
-          border: 2px solid #6082b6;
+        .gallery {
+            display: flex;
+            justify-content: center; /* Centraliza o conteúdo dentro de .gallery */
+            margin: 15px;
+            border: 1px solid #ccc;
+            width: 500px; /* Ajusta conforme necessário */
+            text-align: center;
         }
 
         .gallery img {
-          width: 100%;
-          height: auto;
+            width: 100%;
+            height: auto;
+        }
+
+        .gallery:hover {
+            border: 2px solid #6082b6;
+        }
+
+        .tabela {
+            margin-top: 15px;
+            width: 300px; /* Ajusta conforme necessário */
+        }
+
+        .footer {
+            background-color: #3e546e;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
         }
 
     </style>
@@ -92,7 +125,7 @@
     </div>
     
     <div style="padding-left:20px">
-      <h1>Cansado do Mesmo !!!!!! Venha conhecer casas com estilos únicos e diferentes</h1>
+      <h2>Cansado do Mesmo !!!!!! <br> Venha conhecer casas com estilos únicos e diferentes.</h2>
       <p>Realize seu sonho encontre uma casa com design exclusivo na cidade, no campo ou no litoral</p>
       <h2>Casas Urbana</h2>
       <ul type="circle">
@@ -102,47 +135,53 @@
       </ul>
     </div>
 
-    <div class="gallery">
-        <figure> 
-            <img src="casa1a.jpg" alt="casa em estilo barroco" width="300" height="250">
-            <figcaption>Casa 1 - Estilo Barroco</figcaption>
-        </figure> 
+    <div class="container">
+        <div class="gallery">
+            <figure> 
+                <img src="casapraia1.jpg" alt="casa em estilo barroco" width="300" height="250">
+                <figcaption>Casa 1 - Estilo Barroco</figcaption>
+            </figure> 
+        </div>
+
+        <div class="gallery">
+            <figure>
+                <img src="casapraia2.jpg" alt="casa de dois pavimentos com 10 quartos" width="300" height="250">
+                <figcaption>Casa 2 -Estilo retrô</figcaption>
+            </figure>
+        </div>
+
+        <div class="gallery">
+            <figure>
+                <img src="casapraia3.jpg" alt="casa com fachada de pedra, escada e garagem abaixo da casa" width="300" height="250">
+                <figcaption>Casa 3 - Estilo Vinntage</figcaption>
+            </figure>
+        </div>
+       
+        <div class="tabela">
+            <table border="1" style="color: #a35e65">
+                <thead>
+                    <tr>
+                        <th colspan="2">Corretores</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><mark>Maria</mark></td>
+                        <td><mark>(11) 999999999</mark></td>
+                    </tr>
+                    <tr>
+                        <td><mark>José</mark></td>
+                        <td><mark>(11) 999999999</mark></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-
-    <div class="gallery">
-        <figure>
-            <img src="casa2.jpg" alt="casa de dois pavimentos com 10 quartos" width="300" height="250">
-            <figcaption>Casa 2 - Estilo Retrô</figcaption>
-        </figure>
+    <br>
+    <div class="footer">
+    <footer>
+      <p>&copy; Desenvolvido por Livia Matias.<a href="https://github.com/liviatech/ecommerce">Github</a></p>
+    </footer>
     </div>
-
-    <div class="gallery">
-        <figure>
-            <img src="casa3.jpg" alt="casa com fachada de pedra, escada e garagem abaixo da casa" width="300" height="250">
-            <figcaption>Casa 3 - Estilo Vintage</figcaption>
-        </figure>
-    </div>
-    <div class="gallery">
-    <table border="1" style="color: #a35e65">
-        <thead>
-            <tr>
-                <th colspan="2">Corretores</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><mark>Maria</mark></td>
-                <td><mark>(11) 99999999</mark></td>
-            </tr>
-            <tr>
-                <td><mark>José</mark></td>
-                <td><mark>(11) 99999999</mark></td>
-            </tr>
-        </tbody>
-
-    </table>
-  </div>
-
 </body>
 </html>
-
